@@ -1,0 +1,86 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    /* Clean white background */
+    color: #1a365d;
+    /* Dark professional blue for text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Card Container */
+.container {
+    background-color: #f0f4f8;
+    /* Soft light-blue tint to contrast with white body */
+    border-top: 8px solid #0056b3;
+    /* Bold brand blue top accent */
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    max-width: 550px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Typography */
+h1 {
+    color: #0056b3;
+    /* Primary brand blue */
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.status {
+    font-size: 1.1rem;
+    color: #4a5568;
+    margin-bottom: 25px;
+}
+
+/* Divider Line */
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: #d1d5db;
+    margin-bottom: 25px;
+}
+
+/* Contact Info Layout */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.05rem;
+    color: #1a365d;
+}
+
+.icon {
+    font-size: 1.3rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        padding: 30px 20px;
+    }
+}
